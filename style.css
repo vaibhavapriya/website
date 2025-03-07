@@ -1,0 +1,632 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+    transition: background-color 0.3s, color 0.3s;
+    width: 100vw;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #181818;
+    color: #fff;
+}
+
+/* Login Container */
+.login-container {
+    display: grid;
+    place-items: center;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px ;
+    border-style: solid; 
+    border-color: aqua;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    max-width: 400px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode .login-container {
+    background-color: #242424;
+    color: #fff;
+}
+
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 15px;
+}
+
+/* Dark Mode Button */
+.dark-mode-toggle {
+    cursor: pointer;
+    background: none;
+    border: none;
+    font-size: 1.2rem;
+}
+
+/* Form Styling */
+form,#myForm {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+}
+
+/* Form Group */
+.form-group {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+/* Label */
+label,.form-group1 label {
+    font-weight: bold;
+    margin-bottom: 5px;
+    font-size: medium;
+}
+
+/* Inputs */
+input[type="text"],
+input[type="email"],
+input[type="password"],
+select,
+textarea{
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Dark Mode Input Fields */
+body.dark-mode input {
+    background-color: #333;
+    color: #fff;
+    border: 1px solid #555;
+}
+
+/* Submit Button */
+input[type="submit"] {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    width: 100%;
+}
+
+input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+/* New User Section */
+.new-user {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    margin-top: 15px;
+    font-size: 14px;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Dark Mode Link */
+body.dark-mode a {
+    color: #66b3ff;
+}
+
+/* Mobile Responsive */
+@media (max-width: 480px) {
+    .login-container {
+        padding: 20px;
+        width: 90%;
+    }
+}
+
+/* Switch */
+.switch {
+	position: relative;
+	display: inline-block;
+	width: 50px;
+	height: 24px;
+}
+.switch input {
+	opacity: 0;
+	width: 0;
+	height: 0;
+}
+.slider {
+	position: absolute;
+	cursor: pointer;
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	background-color: #ccc;
+	transition: 0.4s;
+	border-radius: 24px;
+}
+.slider::before {
+	position: absolute;
+	content: "";
+	height: 18px;
+	width: 18px;
+	left: 3px;
+	bottom: 3px;
+	background-color: white;
+	transition: 0.4s;
+	border-radius: 50%;
+}
+input:checked + .slider {
+	background-color: #007bff;
+}
+input:checked + .slider::before {
+	transform: translateX(26px);
+}
+
+/* home */
+
+header nav{
+    width: 100%;
+    background-color:black;
+    color: rgb(255, 255, 255);
+    padding: 15px 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 100;
+    display: flex;
+    justify-content: space-around;
+}
+
+nav a{
+    color: rgb(255, 255, 255);
+}
+
+.contentc {
+ display: flex;
+ flex-direction: column;
+ width: 90%;
+ padding-top: 50px; 
+}
+.content {
+    min-height: calc(100vh - 50px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-size: min(6vw, 6vh);
+    font-weight: bold;
+    transition: transform 0.3s ease, background-color 0.3s ease, opacity 0.3s ease;
+    opacity: 1;
+    color:black;
+}
+.grid1 {
+    display: grid;
+    min-width: 90%;
+    grid-template-columns: 1fr 1fr; /* Two equal columns */
+    gap: 20px; /* Optional: space between grid items */
+    text-align: center; /* Center text inside grid items */
+    padding: 20px; /* Optional: some padding */
+}
+
+.grid1 div {
+    background-color: #e0e0e0;
+    padding: 10px;
+    border-radius: 5px;
+    
+}
+
+
+/* .content.active {
+    opacity: 1;
+    transform: scale(1);
+    background-color: #007bff;
+    color: white;
+} */
+/* 
+.content:hover {
+    transform: scale(1.1); zoom
+    color: #007bff;
+} */
+.reddiv{
+    /* background-color: rgb(255, 158, 158); */
+    color: red;
+    width: 100%;
+    margin-top: 5px;
+    font-size: xx-small;
+    /* padding: 10px;
+    //border: 1px solid red;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;*/
+    opacity: 0; 
+
+}
+.reddiv1{
+    opacity: 1;
+}
+.rbg{
+    background-color: rgb(255, 158, 158);
+}
+.site-footer {
+    /* background-color: #f8f8f8; */
+    padding: 15px 0;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    margin-top: 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: black;
+    font-weight: 500;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+.footer-separator {
+    color: #555;
+    font-weight: bold;
+}
+
+section {
+    padding: 20px;
+    margin: 20px 0;
+    border: 1px solid #ddd;
+    background-color: #f9f9f9;
+    border-radius: 5px;
+}
+
+h2 {
+    font-size: 22px;
+    margin-bottom: 15px;
+    color: #333;
+    border-bottom: 2px solid #000000;
+    padding-bottom: 5px;
+}
+
+.faq-item {
+    margin-bottom: 15px;
+}
+
+.faq-item h3 {
+    font-size: 18px;
+    margin-bottom: 5px;
+    color: #555;
+}
+
+p {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.6;
+}
+.fqac{
+    width: 100%;
+}
+
+
+/* #ticketsList {
+    width: 100%;
+    margin-top: 20px;
+    border-top: 2px solid #000000;
+    padding-top: 10px;
+}
+
+.ticket-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 5px;
+}
+
+.ticket-item button {
+    background-color: red;
+    padding: 5px 10px;
+    margin-top: 5px;
+    border-radius: 2px;
+} */
+#ticketsList {
+    width: 100%;
+    margin-top: 20px;
+    border-top: 2px solid #000000;
+    padding-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.ticket-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 12px;
+    border-radius: 8px;
+    box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+    font-size: 14px;  /* Smaller font for desktop */
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+/* Dark Mode Support */
+body.dark-mode .ticket-item {
+    background-color: #1f1f1f;
+    color: #f1f1f1;
+    border-color: #444;
+}
+
+/* Ticket Details */
+.ticket-item strong {
+    font-weight: 600;
+    color: inherit; /* Works for both light and dark mode */
+}
+
+/* Delete Button */
+.ticket-item button {
+    background-color: #dc3545;
+    color: white;
+    padding: 6px 14px;
+    font-size: 13px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    align-self: flex-start;
+    transition: background-color 0.3s ease;
+}
+
+/* Button Hover */
+.ticket-item button:hover {
+    background-color: #c82333;
+}
+
+/* Dark Mode Button */
+body.dark-mode .ticket-item button {
+    background-color: #ff5c5c;
+    color: black;
+}
+
+/* Responsive - Slightly larger fonts & touch-friendly on small screens */
+@media (max-width: 480px) {
+    .ticket-item {
+        font-size: 16px;
+        padding: 15px;
+    }
+
+    .ticket-item button {
+        padding: 8px 16px;
+        font-size: 14px;
+    }
+}
+
+.grid1 a{
+    color: #000000;
+}
+
+/* Page Container */
+.pageh {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+/* Header and Grid */
+h1, h2 {
+    font-size: 24px;
+    margin: 10px 0;
+    font-weight: bold;
+}
+
+h1 {
+    color: inherit; /* Takes color from body (light or dark) */
+}
+
+/* Grid Links */
+.grid1 a {
+    text-decoration: none;
+    color: inherit; /* Text color changes with light/dark mode */
+}
+
+.grid1 div {
+    background-color: #f0f0f0;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    cursor: pointer;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode .grid1 div {
+    background-color: #333333;
+    color: white;
+}
+
+/* Form Inputs */
+#myForm input, #myForm select, #myForm textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: white;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+body.dark-mode form input,
+body.dark-mode form select,
+body.dark-mode form textarea {
+    background-color: #222222;
+    color: white;
+    border: 1px solid #555;
+}
+
+/* Form Labels */
+#myForm label {
+    font-weight: bold;
+    margin-bottom: 5px;
+}
+
+/* Form Button */
+#myForm button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#myForm button:hover {
+    background-color: #333333;
+}
+
+body.dark-mode form button {
+    background-color: white;
+    color: black;
+}
+
+body.dark-mode form button:hover {
+    background-color: #f0f0f0;
+}
+
+/* Footer */
+.site-footer {
+    padding: 15px 0;
+    text-align: center;
+    border-top: 1px solid #ddd;
+    background-color: inherit; /* Matches body */
+}
+
+.footer-content {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    font-size: 14px;
+}
+
+.footer-link {
+    text-decoration: none;
+    color: inherit; /* Adapts to light/dark mode */
+    font-weight: 500;
+}
+
+.footer-link:hover {
+    text-decoration: underline;
+}
+
+/* Reddiv (Error Messages) */
+.reddiv {
+    color: red;
+    font-size: xx-small;
+    opacity: 0;
+}
+
+.reddiv1 {
+    opacity: 1;
+}
+
+/* Mobile Friendly */
+@media (max-width: 480px) {
+    .grid1 {
+        grid-template-columns: 1fr;
+    }
+}
+#ticket{
+    justify-content:flex-start;
+}
+.ticket-item {
+    background-color: #fff;
+    border: 1px solid #ddd;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    font-size: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Subject - bold and slightly larger */
+.ticket-subject {
+    font-weight: bold;
+    font-size: 16px;
+    margin-bottom: 5px;
+}
+
+/* Priority and Topic side by side */
+.ticket-details {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* Description */
+.ticket-description {
+    font-size: 14px;
+    color: #444;
+    margin: 5px 0;
+}
+
+/* Actions - Delete button at bottom-right */
+.ticket-actions {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 5px;
+}
+
+/* Delete button styling */
+.delete-btn {
+    background-color: red;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 8px 15px;
+    font-size: 14px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.delete-btn:hover {
+    background-color: darkred;
+}

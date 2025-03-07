@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- add icon -->
+	<link rel="icon" type="image/png" href="./images/favicon.png" />
+	<title>register</title>
+	<link rel="stylesheet" href="style.css"/>
+	<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+	<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/solid.min.css"
+      integrity="sha512-/r+0SvLvMMSIf41xiuy19aNkXxI+3zb/BN8K9lnDDWI09VM0dwgTMzK7Qi5vv5macJ3VH4XZXr60ip7v13QnmQ=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div  >
+      <header>
+        <nav>
+          <a href="#home">Home</a>
+          <a href="#create">Create Tickets</a>
+          <a href="myticket.html">My Tickets</a>
+          <a href="faq.html#about">About Us</a>
+          <a href="index.html" id="logout">Logout</a>
+        </nav>
+      </header>
+    </div>
+    <div class="pageh">
+      <div class="contentc" >
+        <div class="content" id="home">
+          <h1 id="userw"></h1>
+          <div class="grid1">
+            <a href="#create"><div>Create Tickets</div></a>
+            <a href="myticket.html"><div>My Tickets</div></a>
+            <a href="faq.html#about"><div>FAQS</div></a>
+            <a href="faq.html#contact-us"><div>Contact US</div></a>
+          </div>
+        </div>
+        <div class="content" id="create">
+          <h2>Create Ticket</h2>
+          <div>
+            <form id="myForm">
+              <!-- Subject -->
+              <div class="form-group1" id="q1">
+                  <label for="subject">Subject</label>
+                  <input type="text" id="subject" name="subject" placeholder="Enter subject">
+                  <div class="reddiv" id="r1">Please enter subject</div>
+              </div>
+          
+              <!-- Priority -->
+              <div class="form-group1" id="q2">
+                  <label for="priority">Priority</label>
+                  <select id="priority" name="priority">
+                      <option value="">Select Priority</option>
+                      <option value="high">High</option>
+                      <option value="medium">Medium</option>
+                      <option value="low">Low</option>
+                  </select>
+                  <div class="reddiv" id="r2">Please select priority</div>
+              </div>
+          
+              <!-- Topic -->
+              <div class="form-group1" id="q3">
+                  <label for="topic">Topic</label>
+                  <input type="text" id="topic" name="topic" placeholder="Enter topic">
+                  <div class="reddiv" id="r3">Please enter topic</div>
+              </div>
+          
+              <!-- Description -->
+              <div class="form-group1" id="q4">
+                  <label for="description">Description</label>
+                  <textarea id="description" name="description" placeholder="Enter description"></textarea>
+                  <div class="reddiv" id="r4">Please enter description</div>
+              </div>
+          
+              <button type="submit">Submit</button>
+          </form></div>
+          </div>
+      </div>
+      <footer class="site-footer">
+          <div class="footer-content">
+              <a href="faq.html#contact-us" class="footer-link">Contact Us</a>
+              <span class="footer-separator">|</span>
+              <a href="" class="footer-link">License</a>
+          </div>
+      </footer>
+    </div>
+    <script src="scriptmain.js"></script>
+  </body>
+</html>

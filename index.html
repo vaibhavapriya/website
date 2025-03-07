@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- add icon -->
+	<link rel="icon" type="image/png" href="./images/favicon.png" />
+	<title>login</title>
+	<link rel="stylesheet" href="style.css"/>
+	<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+	<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/solid.min.css"
+      integrity="sha512-/r+0SvLvMMSIf41xiuy19aNkXxI+3zb/BN8K9lnDDWI09VM0dwgTMzK7Qi5vv5macJ3VH4XZXr60ip7v13QnmQ=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="page">
+    <div class="login-container">
+      <header>
+        <h2>Login</h2>
+        <div>
+          <label class="switch">
+            <input type="checkbox"  id="darkModeToggle">
+            <span class="slider round"></span>
+          </label>
+        </div>
+      </header>
+        <div>
+          <form action="" id="l">
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" >
+                <div class="reddiv" id="r6">Please enter email</div>
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" >
+                <div class="reddiv" id="r7">Please enter password</div>
+            </div>
+            <div class="form-group">
+                <input type="submit" value="Login">
+            </div>
+        </form>
+        <div class="reddiv" id="r8">invalid username or password</div>
+        <div class="new-user">
+            <span>New User?</span>
+            <a href="newUser.html">Register here</a>
+        </div>
+        </div>
+    </div>
+  </div>
+    <script src="script.js"></script>
+  </body>
+</html>

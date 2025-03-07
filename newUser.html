@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- add icon -->
+	<link rel="icon" type="image/png" href="./images/favicon.png" />
+	<title>register</title>
+	<link rel="stylesheet" href="style.css"/>
+	<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
+      integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
+      crossorigin="anonymous"
+    />
+	<link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/solid.min.css"
+      integrity="sha512-/r+0SvLvMMSIf41xiuy19aNkXxI+3zb/BN8K9lnDDWI09VM0dwgTMzK7Qi5vv5macJ3VH4XZXr60ip7v13QnmQ=="
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <div class="page">
+      <div class="login-container">
+        <header>
+            <h2>Register</h2>
+            <div>
+              <label class="switch">
+                <input type="checkbox"  id="darkModeToggle">
+                <span class="slider round"></span>
+              </label>
+            </div>
+        </header>
+    
+        <form action="index.html" id="r">
+            <!-- Username -->
+            <div class="form-group" id="q">
+                <label for="user">Username</label>
+                <input type="text" id="user" name="user" placeholder="Enter your username" >
+                <div class="reddiv" id="r1">Please enter username</div>
+            </div>
+    
+            <!-- Email -->
+            <div class="form-group">
+                <label for="email">Email Address</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email">
+                <div class="reddiv" id="r2">Please enter email</div>
+            </div>
+    
+            <!-- Password -->
+            <div class="form-group">
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Enter your password" >
+                <div class="reddiv" id="r3">Please enter password</div>
+            </div>
+    
+            <!-- Confirm Password -->
+            <div class="form-group">
+                <label for="password1">Confirm Password</label>
+                <input type="password" id="password1" name="password1" placeholder="Re-enter your password">
+                <div class="reddiv" id="r4">Please enter the same password</div>
+            </div>
+    
+            <!-- Subscribe Checkbox -->
+            <div class="form-group checkbox-group">
+                <input type="checkbox" id="sub" name="sub">
+                <label for="sub">Subscribe to newsletter</label>
+            </div>
+    
+            <!-- Submit Button -->
+            <div class="form-group">
+                <input type="submit" value="Register">
+            </div>
+        </form>
+        <div class="reddiv" id="r5">This email is already registered! Please use a different email.</div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
