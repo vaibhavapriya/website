@@ -644,3 +644,10 @@ body.dark-mode form button:hover {
 #contactForm button:hover {
     background-color: #333333;
 }
+.checkbox-group {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 8px;
+}
