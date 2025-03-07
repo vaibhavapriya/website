@@ -630,3 +630,17 @@ body.dark-mode form button:hover {
 .delete-btn:hover {
     background-color: darkred;
 }
+
+#contactForm button {
+    background-color: #000000;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#contactForm button:hover {
+    background-color: #333333;
+}
