@@ -36,7 +36,7 @@ let users = JSON.parse(localStorage.getItem('users')) || [];
 
 // If it's the registration page, attach form validation
 const registerForm = document.getElementById("r");
-if (registerForm) {
+if (registerForm) {     //registerForm?.addEventListener("submit", (e) => {
     registerForm.addEventListener('submit', (e) => {
         if (!validateRegisterForm()) {
             e.preventDefault() ;// Stop form submission if validation fails
@@ -51,6 +51,7 @@ if (registerForm) {
         if (password !== password1) {
             const a4=document.getElementById("r4")
             a4.classList.add('reddiv1');
+            // not right thing .best pratice <div class..></div> in js innertext/innerhtml for spacing
             document.getElementById('password').classList.add('rbg');
             document.getElementById('password1').classList.add('rbg');
             e.preventDefault() ;

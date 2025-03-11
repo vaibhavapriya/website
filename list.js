@@ -19,6 +19,7 @@ function loadTickets() {
     ticketsList.innerHTML = ''; // clear previous list
 
     const tickets = JSON.parse(localStorage.getItem('tickets')) || [];
+    const currentUser=currentUser=loggedInUser.username
     const mytickets=tickets.filter(ticket => ticket.user === currentUser);
 
     if (mytickets.length === 0) {
